@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aarhus Tekniske Installationsforr v/Peter Bjørn Hansen - Autoriseret VVS, varmeanlæg, klimaanlæg og blikkenslagerarbejde i Åbyhøj. 40+ års erfaring siden 1982.">
+    <meta name="keywords" content="VVS Åbyhøj, varmeanlæg, klimaanlæg, blikkenslagerarbejde, autoriseret installør, Aarhus">
+    <title>VVS & Blik siden 1982 | Aarhus Tekniske Installationsforr v/Peter Bjørn Hansen</title>
+    <link rel="icon" type="image/jpeg" href="images/logo.png">
+    <link rel="shortcut icon" type="image/jpeg" href="images/logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#3a3d1f',
+                        'secondary': '#c9c98e',
+                        'accent': '#6b6e3a',
+                        'light': '#f8f7ed',
+                        'medium': '#75775a'
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.8s ease-out',
+                        'slide-up': 'slideUp 0.6s ease-out',
+                        'slide-right': 'slideRight 0.6s ease-out'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes slideRight {
+            from { transform: translateX(-20px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        .hero-pattern {
+            background-image: linear-gradient(45deg, #3a3d1f 25%, transparent 25%, transparent 75%, #3a3d1f 75%, #3a3d1f),
+                            linear-gradient(45deg, #3a3d1f 25%, transparent 25%, transparent 75%, #3a3d1f 75%, #3a3d1f);
+            background-size: 30px 30px;
+            background-position: 0 0, 15px 15px;
+            opacity: 0.03;
+        }
+            body { font-family: 'Work Sans', system-ui, sans-serif; }
+        h1, h2, h3, h4 { font-family: 'Oswald', system-ui, sans-serif; letter-spacing: -0.015em; }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="font-sans bg-white text-primary">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur shadow-lg z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12 rounded overflow-hidden">
+                        <img src="images/logo.png" alt="Aarhus Tekniske Installationsforr v/Peter Bjørn Hansen logo"
+                             class="w-full h-full object-cover"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="w-12 h-12 bg-primary rounded flex items-center justify-center" style="display: none;">
+                            <span class="text-secondary font-bold text-xl">AH</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h1 class="text-lg font-bold">Aarhus Tekniske Installationsforr</h1>
+                        <p class="text-xs text-medium">VVS & Blik siden 1982</p>
+                    </div>
+                </div>
+                <ul class="hidden md:flex space-x-8">
+                    <li><a href="index.html" class="text-primary font-semibold border-b-2 border-primary pb-1">Forside</a></li>
+                    <li><a href="services.html" class="text-primary hover:text-accent transition duration-300">Services</a></li>
+                    <li><a href="projekter.html" class="text-primary hover:text-accent transition duration-300">Projekter</a></li>
+                    <li><a href="om-os.html" class="text-primary hover:text-accent transition duration-300">Om Os</a></li>
+                    <li><a href="kontakt.html" class="text-primary hover:text-accent transition duration-300">Kontakt</a></li>
+                </ul>
+                <div class="hidden md:flex items-center space-x-2 bg-primary text-white px-4 py-2 rounded-md">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                    </svg>
+                    <a href="tel:+4586256411" class="font-semibold">86 25 64 11</a>
+                </div>
+                <button id="mobile-menu-button" class="md:hidden text-primary">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4 border-t border-gray-200 mt-2">
+                <ul class="space-y-2 pt-4">
+                    <li><a href="index.html" class="block text-primary font-semibold py-2">Forside</a></li>
+                    <li><a href="services.html" class="block text-primary hover:text-accent transition duration-300 py-2">Services</a></li>
+                    <li><a href="projekter.html" class="block text-primary hover:text-accent transition duration-300 py-2">Projekter</a></li>
+                    <li><a href="om-os.html" class="block text-primary hover:text-accent transition duration-300 py-2">Om Os</a></li>
+                    <li><a href="kontakt.html" class="block text-primary hover:text-accent transition duration-300 py-2">Kontakt</a></li>
+                </ul>
+                <div class="mt-4 pt-4 border-t border-gray-200">
+                    <a href="tel:+4586256411" class="flex items-center space-x-2 text-primary font-semibold">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                        </svg>
+                        <span>86 25 64 11</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 relative overflow-hidden">
+        <div class="absolute inset-0 hero-pattern"></div>
+        <!-- Background image -->
+        <div class="absolute inset-0 opacity-5">
+            <img src="https://images.unsplash.com/photo-1507652313519-d4e9174996dd?w=1600&fit=crop&auto=format&q=75" alt="Snedkerarbejde baggrund"
+                 class="w-full h-full object-cover"
+                 onerror="this.style.display='none';">
+        </div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="animate-slide-right">
+                    <div class="inline-flex items-center bg-green-100 px-4 py-2 rounded-full mb-6">
+                        <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <span class="text-sm font-semibold">Autoriseret VFUL-installation</span>
+                    </div>
+                    <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                        VVS og blik <span class="text-medium">siden 1982</span> i Åbyhøj
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8">
+                        Vi håndterer VVS-installation, varmeanlæg, klimaanlæg og blikkenslagerarbejde til boliger og erhverv. 40+ års erfaring med autoriseret håndværk.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="kontakt.html" class="bg-primary text-white px-8 py-4 rounded-md font-semibold hover:bg-accent transition duration-300 text-center flex items-center justify-center">
+                            <span>Få gratis tilbud</span>
+                            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                        <a href="tel:+4586256411" class="border-2 border-primary text-primary px-8 py-4 rounded-md font-semibold hover:bg-primary hover:text-white transition duration-300 text-center">
+                            Ring 86 25 64 11
+                        </a>
+                    </div>
+                </div>
+                <div class="animate-fade-in">
+                    <!-- Team Photo -->
+                    <div class="bg-white rounded-2xl shadow-2xl overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1631889993959-41b4e9c6e3c5?w=1600&fit=crop&auto=format&q=75" alt="Aarhus Tekniske Installationsforr v/Peter Bjørn Hansen team med biler og værktøj"
+                             class="w-full h-full object-cover"
+                             loading="eager"
+                             fetchpriority="high"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-gray-200 to-gray-300" style="display: none;">
+                            <svg class="w-20 h-20 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <!-- Stats below photo -->
+                    <div class="grid grid-cols-2 gap-4 mt-6">
+                        <div class="bg-white rounded-md shadow-xl p-4 text-center transform hover:scale-105 transition duration-300">
+                            <div class="text-2xl font-bold text-primary mb-1">40+</div>
+                            <p class="text-sm text-gray-600">År erfaring</p>
+                        </div>
+                        <div class="bg-primary text-white rounded-md p-4 text-center transform hover:scale-105 transition duration-300">
+                            <div class="text-2xl font-bold mb-1">200+</div>
+                            <p class="text-sm text-secondary">Installationers pålidelig</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">Vores Services</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Fra VVS-installation til blikkenslagerarbejde – vi leverer autoriserede løsninger til boliger og erhverv
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- VVS Installation -->
+                <div class="bg-white rounded-md p-8 shadow-lg hover:shadow-2xl transition duration-300">
+                    <div class="w-16 h-16 bg-primary rounded-md flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">VVS Installation</h3>
+                    <p class="text-gray-600 mb-6">
+                        Autoriseret installation af vand-, varme- og sanitetsteknik til boliger og erhverv. Rutineret drift, reparation og vedligeholdelse.
+                    </p>
+                    <a href="services.html" class="text-primary font-semibold flex items-center hover:text-accent transition">
+                        Læs mere
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Varmeanlæg -->
+                <div class="bg-white rounded-md p-8 shadow-lg hover:shadow-2xl transition duration-300">
+                    <div class="w-16 h-16 bg-primary rounded-md flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Varmeanlæg</h3>
+                    <p class="text-gray-600 mb-6">
+                        Professionel montering og vedligeholdelse af varmeanlæg og centralvarmeløsninger. Effektiv og pålidelig varmekomfort året rundt.
+                    </p>
+                    <a href="services.html" class="text-primary font-semibold flex items-center hover:text-accent transition">
+                        Læs mere
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Klimaanlæg -->
+                <div class="bg-white rounded-md p-8 shadow-lg hover:shadow-2xl transition duration-300">
+                    <div class="w-16 h-16 bg-primary rounded-md flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2m0 0a2 2 0 002-2v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4a2 2 0 012-2"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Klimaanlæg</h3>
+                    <p class="text-gray-600 mb-6">
+                        Installation af klimaanlæg og ventilationsløsninger til komfortabel indeklima. Energieffektive systemer til både boliger og erhverv.
+                    </p>
+                    <a href="services.html" class="text-primary font-semibold flex items-center hover:text-accent transition">
+                        Læs mere
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="services.html" class="inline-flex items-center bg-primary text-white px-8 py-3 rounded-md font-semibold hover:bg-accent transition duration-300">
+                    Se alle services
+                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold mb-6">Hvorfor vælge os til dit VVS-projekt?</h2>
+                    <p class="text-lg text-gray-600 mb-8">
+                        Med 40+ års erfaring som autoriseret VVS-installatør siden 1982, leverer vi pålidelige løsninger med fuld faglig kompetence.
+                        Vi sætter en ære i at løse opgaver til tiden med kvalitetsmaterialer og professionel service.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-light rounded-md flex items-center justify-center flex-shrink-0 mr-4">
+                                <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-2">VFUL-autoriseret installation</h3>
+                                <p class="text-gray-600">Vi er autoriseret til alt VVS-arbejde med garantikompetence og fuldt ansvar</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-light rounded-md flex items-center justify-center flex-shrink-0 mr-4">
+                                <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-2">Altid til tiden</h3>
+                                <p class="text-gray-600">Vi overholder aftaler og færdiggør projekter som aftalt</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-light rounded-md flex items-center justify-center flex-shrink-0 mr-4">
+                                <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-2">Professionel vedligeholdelse</h3>
+                                <p class="text-gray-600">Vi anbefaler løbende vedligeholdelse for sikker og effektiv drift gennem hele året</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-primary text-white rounded-2xl p-10">
+                    <h3 class="text-3xl font-bold mb-6">Kontakt os for en gratis vurdering</h3>
+                    <p class="text-secondary text-lg mb-8">
+                        Vi tilbyder altid gratis rådgivning og besøg for at vurdere dit VVS-, varme- eller klimaprojekt. Ring eller skriv i dag.
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-secondary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Gratis vurdering og besøg</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-secondary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Klar til at komme på kort varsel</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-secondary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Lokal ekspertise siden 1982</span>
+                        </li>
+                    </ul>
+                    <a href="kontakt.html" class="inline-flex items-center bg-white text-primary px-6 py-3 rounded-md font-semibold hover:bg-light transition duration-300">
+                        Få tilbud nu
+                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">Hvad vores kunder siger</h2>
+                <p class="text-xl text-gray-600">Læs om andre kunders erfaringer med vores arbejde</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-md p-6 shadow-lg">
+                    <div class="flex mb-4">
+                        <svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        "Meget professionel tilgang til vores boligopvarmning. De kom til tiden, arbejdede korrekt og rådgav os godt om vedligeholdelse."
+                    </p>
+                    <p class="font-semibold">- Carsten K., Åbyhøj</p>
+                </div>
+
+                <div class="bg-white rounded-md p-6 shadow-lg">
+                    <div class="flex mb-4">
+                        <svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        "Vi havde brug for nyt varmeanlæg i vores erhvervsejendom. De planlagde det godt, viste os alt og var meget dygtige til at forklare systemet."
+                    </p>
+                    <p class="font-semibold">- Jens M., Brabrand</p>
+                </div>
+
+                <div class="bg-white rounded-md p-6 shadow-lg">
+                    <div class="flex mb-4">
+                        <svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        "Vi installerede klimaanlæg i hele villaen. Støjsvagt, energibesparende og dejlig temperatur hele året. Tiptop arbejde!"
+                    </p>
+                    <p class="font-semibold">- Lone & Peter H., Risskov</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-primary to-accent text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">Har du brug for VVS eller varmeservice?</h2>
+            <p class="text-xl text-secondary mb-8 max-w-2xl mx-auto">
+                Kontakt os til en gratis vurdering og rådgivning. Vi handler hurtigt og løser dine VVS-behov professionelt.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="tel:+4586256411" class="bg-white text-primary px-8 py-4 rounded-md font-semibold hover:bg-light transition duration-300 flex items-center justify-center">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                    </svg>
+                    Ring 86 25 64 11
+                </a>
+                <a href="kontakt.html" class="border-2 border-white text-white px-8 py-4 rounded-md font-semibold hover:bg-white hover:text-primary transition duration-300">
+                    Skrive besked
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-secondary py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h4 class="text-white font-bold mb-4">Aarhus Tekniske Installationsforr</h4>
+                    <p class="mb-2">v/Peter Bjørn Hansen</p>
+                    <p class="mb-2">8230 Åbyhøj</p>
+                    <p>Medlem af TEKNIQ</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="services.html" class="hover:text-white transition">VVS Installation</a></li>
+                        <li><a href="services.html" class="hover:text-white transition">Varmeanlæg</a></li>
+                        <li><a href="services.html" class="hover:text-white transition">Klimaanlæg</a></li>
+                        <li><a href="services.html" class="hover:text-white transition">Blikkenslagerarbejde</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Kontakt</h4>
+                    <p class="mb-2">Telefon: <a href="tel:+4586256411" class="hover:text-white transition">86 25 64 11</a></p>
+                    <p class="mb-2">Email: <a href="mailto:info@aatif.dk" class="hover:text-white transition">info@aatif.dk</a></p>
+                    <p>Allégårdsvej 6, 8230 Åbyhøj</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Åbningstider</h4>
+                    <p class="mb-2">Mandag - Fredag: 07:00 - 16:00</p>
+                    <p class="mb-2">Lørdag: Efter aftale</p>
+                    <p>Søndag: Lukket</p>
+                </div>
+            </div>
+            <div class="border-t border-accent pt-8">
+                <p class="text-center">&copy; 2026 Aarhus Tekniske Installationsforr v/Peter Bjørn Hansen. Alle rettigheder forbeholdes.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
